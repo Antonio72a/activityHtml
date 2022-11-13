@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário HTML</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="styleFour.css">
+</head>
+<body>
+    <form class="formulario" method="post"> 
+        <div class="cor">
+            <p>Sistema de Gestão Acadêmica</p>
+        </div>
+
+        <div>
+            <p>Manutenção de usuários do sistema interno</p>
+        </div>
+
+        <div class="field">
+            <label for="login">Digite seu Login:</label>
+            <input type="text" id="login" name="login" placeholder="Digite seu login*" required>
+        </div>
+
+        <div class="field">
+            <label for="senha">Digite sua Senha:</label>
+            <input type="text" id="senha" name="senha" placeholder="Digite sua senha*" required>
+        </div>
+
+        <div class="lista">
+            <label for="estado">Estado:</label>
+            <select>
+            <option value="item 1">Ativo</option>
+            <option value="item 2">Inativo</option>
+        </select>
+        </div>
+
+        <br>
+
+        <div class="field radiobox">
+            <span>Tipo:</span>
+            <input type="radio" name="tipo" id="tipo" value="1"><label for="1">Técnico</label>
+            <input type="radio" name="tipo" id="tipo" value="2"><label for="2">Professor</label>
+            <input type="radio" name="tipo" id="tipo" value="3"><label for="3">Aluno</label>
+        </div>
+
+        <div class="lista">
+            <label for="data">Data de Criação:</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div class="field radiobox">
+            <span>Perfil:</span>
+            <input type="radio" name="tipo" id="tipo" value="1"><label for="1">Convidado</label>
+            <input type="radio" name="tipo" id="tipo" value="1"><label for="1">Administrador</label>
+        </div>
+
+        <table>
+            <tr>
+                <td>
+                    Observações: 
+                </td>
+                <th>
+                    <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+                </th>
+            </tr>
+        </table>
+
+        <div>
+            <input type="checkbox" name="mod" id="mod">
+            <span>Compras</span>
+            <input type="checkbox" name="mod" id="mod">
+            <span>Biblioteca</span>
+            <input type="checkbox" name="mod" id="mod">
+            <span>Acadêmica</span>
+            <input type="checkbox" name="mod" id="mod">
+            <span>Documentação</span>
+            <input type="checkbox" name="mod" id="mod">
+            <span>Recursos Humanos</span>
+        </div>
+
+        <br>
+        
+        <div>
+            <div>
+                <input type="submit" name="acao" value="Cadastrar">
+                <br>
+                <input type="submit" name="acao" value="Excluir">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
